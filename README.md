@@ -1,9 +1,14 @@
 # ITMOS
 
-## Overview
-This synthetic dataset contains information related to tests conducted on test beds in a telecom industry. The dataset includes various attributes such as test setup, procedures, criteria, conditions, configurations, and more.
+## Project overview
+
+This system gives recommendations for CI configuration and test automation based on input test specifications. The system features an integrated graphical user interface (GUI) that provides a user-friendly experience for inputting test specifications and  interacting with the system. The recommendations are visually presented in the GUI and are generated based on the models' confidence in their predictions.
+
+![Figure 1: Overview of the implementation of AI system.](Figures/GUI.pdf/)
+
 
 ## Data Description
+This synthetic dataset contains information related to tests conducted on test beds in a telecom industry. The dataset includes various attributes such as test setup, procedures, criteria, conditions, configurations, and more.
 
 ### Columns
 1. **id**: Unique identifier for each test.
@@ -19,10 +24,10 @@ This synthetic dataset contains information related to tests conducted on test b
 11. **SW Track**: Software track associated with the test.
 12. **Tagged Microservice**: Microservice tagged with the test.
 13. **Test Duration (weeks)**: Duration of the test in weeks.
-14. **CHS Verification**: Verification status of CHS (Compliance and Health System).
+14. **CHS Verification**: Verification status of CHS (Characteristics Specifications).
 15. **EPIC**: EPIC associated with the test.
 16. **Test Framework Text Default**: Default test framework text.
 17. **Test Framework**: Framework used for conducting the test.
 18. **Context_name**: Name of the test context.
-19. **CI Pipeline**: Details of the Continuous Integration pipeline.
-20. **Automation**: Level of automation for the test.
+19. **CI Configuration**: Continuous Integration Configuration value for each test (Target Value).
+20. **Automation**: Value telling wheter the test needs to be automated or not (Target Value).
